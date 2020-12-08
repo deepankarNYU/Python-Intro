@@ -9,33 +9,27 @@ def welcome_assignment_answers(question):
     #The student doesn't have to follow the skeleton for this assignment.
     #Another way to implement is using a "case" statements similar to C.
     if question == "Are encoding and encryption the same? - Yes/No":
-        answer = "No"
+        return "No"
     elif question == "Is it possible to decrypt a message without a key? - Yes/No":
-        answer = "No"
+        return "No"
     elif question == "Is it possible to decode a message without a key? - Yes/No":
-        answer = "Yes"
+        return "Yes"
     elif question == "Is a hashed message supposed to be un-hashed?":
-        answer = "No"
+        return "No"
     elif question ==  "What is the MD5 hashing value to the following message: 'NYU Computer Networking' - Use MD5 hash generator and use the answer in your code":
         result = ''
         result += hashlib.md5(b"NYU Computer Networking").hexdigest()
         return result
     elif question == "Is MD5 a secured hashing algorithm? - Yes/No":
-        answer = "No"
+        return "No"
     elif question == "What layer from the TCP/IP model the protocol DHCP belongs to? - The answer should be a numeric number":
-        answer = 5
+        return 5
     elif question == "What layer of the TCP/IP model the protocol TCP belongs to? - The answer should be a numeric number":
-        answer= 4
+        return 4
 
 
-    return(answer)
+    return()
 # Complete all the questions.
-
-def MD5Hash():
-    result = ''
-    result += hashlib.md5(b"NYU Computer Networking").hexdigest()
-    
-    return result
 
     
 
