@@ -29,11 +29,13 @@ def welcome_assignment_answers(question):
     return(answer)
 # Complete all the questions.
 
-def MD5Hash():
-    
-    return(hashlib.md5(b"NYU Computer Networking").hexdigest())
 
     
+def MD5Hash():
+    result = ''
+    result += hashlib.md5(b"NYU Computer Networking").hexdigest()
+    return result
+     
 
 if __name__ == "__main__":
     #use this space to debug and verify that the program works
