@@ -28,7 +28,8 @@ def welcome_assignment_answers(question):
         return 4
 
 
- 
+    else:
+        return 'no'
 # Complete all the questions.
 
     
